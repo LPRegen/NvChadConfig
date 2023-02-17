@@ -27,6 +27,7 @@ M.mason = {
 -- git support in nvimtree
 M.nvimtree = {
   view = {
+    -- Custom keybindings
     mappings = {
       list = {
         { key = { "<CR>", "o", "l" }, action = "edit" },
@@ -34,9 +35,11 @@ M.nvimtree = {
       },
     },
   },
+
   git = {
     enable = true,
   },
+
   renderer = {
     highlight_git = true,
     icons = {
