@@ -10,7 +10,7 @@ M.override = {
     bg = "black2",
   },
   Comment = {
-    italic = true,
+    italic = false,
   },
 }
 
