@@ -15,8 +15,8 @@ local sources = {
   -- Lua
   b.formatting.stylua,
 
-  -- cpp
-  -- b.formatting.clang_format,
+  -- Diagnostics
+  b.diagnostics.eslint_d,
 }
 
 null_ls.setup {
