@@ -62,7 +62,6 @@ local plugins = {
   },
 
   ["ethanholz/nvim-lastplace"] = {},
-
 }
 
 return plugins
