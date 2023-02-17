@@ -63,8 +63,6 @@ local plugins = {
 
   ["ethanholz/nvim-lastplace"] = {},
 
-  -- remove plugin
-  -- ["hrsh7th/cmp-path"] = false,
 }
 
 return plugins
