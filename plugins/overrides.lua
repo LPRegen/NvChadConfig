@@ -16,7 +16,6 @@ M.mason = {
     -- lua stuff
     "lua-language-server",
     "stylua",
-
     -- web dev stuff
     "css-lsp",
     "html-lsp",
@@ -24,7 +23,6 @@ M.mason = {
   },
 }
 
--- git support in nvimtree
 M.nvimtree = {
   view = {
     -- Custom keybindings
