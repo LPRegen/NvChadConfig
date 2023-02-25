@@ -54,4 +54,8 @@ M.nvimtree = {
   },
 }
 
+M.gitsigns = {
+  numhl = true,
+}
+
 return M

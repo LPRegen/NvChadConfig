@@ -58,6 +58,10 @@ local plugins = {
     end,
   },
 
+  ["lewis6991/gitsigns.nvim"] = {
+    override_options = overrides.gitsigns;
+  },
+
   ["ethanholz/nvim-lastplace"] = {
     config = function()
       require("nvim-lastplace")
