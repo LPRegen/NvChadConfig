@@ -41,6 +41,9 @@ local plugins = {
 
   ["folke/which-key.nvim"] = {
     disable = false,
+    config = function ()
+      require("custom.plugins.whichkey")
+    end
   },
 
   ["windwp/nvim-ts-autotag"] = {
