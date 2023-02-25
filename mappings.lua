@@ -47,5 +47,43 @@ M.tabufline = {
   },
 }
 
+M.gitsigns = {
+  n = {
+    ["<leader>gr"] = {
+      function()
+        require("gitsigns").reset_hunk()
+      end,
+      "Reset hunk",
+    },
+
+    ["<leader>gR"] = {
+      function()
+        require("gitsigns").reset_buffer()
+      end,
+      "Reset buffer",
+    },
+
+    ["<leader>gp"] = {
+      function()
+        require("gitsigns").preview_hunk()
+      end,
+      "Preview hunk",
+    },
+
+    ["<leader>gb"] = {
+      function()
+        package.loaded.gitsigns.blame_line()
+      end,
+      "Blame line",
+    },
+
+    ["<leader>gt"] = {
+      function()
+        require("gitsigns").toggle_deleted()
+      end,
+      "Toggle deleted",
+    },
+  },
+}
 
 return M
