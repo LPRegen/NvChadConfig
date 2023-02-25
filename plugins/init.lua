@@ -4,7 +4,7 @@ local overrides = require "custom.plugins.overrides"
 local plugins = {
 
   ["goolord/alpha-nvim"] = {
-    disable = false,
+    disable = true,
     cmd = "Alpha",
   },
 
