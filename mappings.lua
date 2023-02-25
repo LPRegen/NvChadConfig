@@ -13,7 +13,7 @@ M.general = {
 
 M.nvterm = {
   t = {
-    ["<A-\\>"] = {
+    ["<C-\\>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
@@ -21,7 +21,7 @@ M.nvterm = {
     },
   },
   n = {
-    ["<A-\\>"] = {
+    ["<C-\\>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
