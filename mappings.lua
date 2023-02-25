@@ -30,4 +30,22 @@ M.nvterm = {
   },
 }
 
+M.tabufline = {
+  n = {
+    ["<TAB>"] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflineNext()
+      end,
+      "goto next buffer",
+    },
+    ["<A-Tab>"] = {
+      function()
+        require("nvchad_ui.tabufline").tabuflinePrev()
+      end,
+      "goto prev buffer",
+    },
+  },
+}
+
+
 return M
