@@ -36,6 +36,13 @@ local options = {
   },
 }
 
+local mappings = {
+  g = {
+    name = "Git",
+  },
+}
+
 options = require("core.utils").load_override(options, "folke/which-key.nvim")
 
 wk.setup(options)
+wk.register(mappings, { prefix = "<leader>" })
