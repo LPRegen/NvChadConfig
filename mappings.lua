@@ -1,6 +1,27 @@
 ---@type MappingsConfig
 local M = {}
 
+M.disabled = {
+  n = {
+    -- tabufline
+    ["<S-Tab>"] = "",
+
+    -- nvterm
+    ["<A-i>"] = "",
+    ["<leader>pt"] = "",
+
+    -- gitsigns
+    ["<leader>ph"] = "",
+    ["<leader>rh"] = "",
+    ["<leader>td"] = "",
+  },
+
+  i = {
+    -- nvterm
+    ["<A-i>"] = "",
+  },
+}
+
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
@@ -49,6 +70,12 @@ M.tabufline = {
 
 M.gitsigns = {
   n = {
+    ["<leader>gs"] = {
+      function()
+        require("gitsigns").stage_hunk()
+      end,
+    },
+
     ["<leader>gr"] = {
       function()
         require("gitsigns").reset_hunk()
