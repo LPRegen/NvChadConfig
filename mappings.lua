@@ -74,6 +74,7 @@ M.gitsigns = {
       function()
         require("gitsigns").stage_buffer()
       end,
+      "Stage buffer"
     },
 
     ["<leader>gr"] = {
