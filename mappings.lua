@@ -70,9 +70,9 @@ M.tabufline = {
 
 M.gitsigns = {
   n = {
-    ["<leader>gs"] = {
+    ["<leader>ga"] = {
       function()
-        require("gitsigns").stage_hunk()
+        require("gitsigns").stage_buffer()
       end,
     },
 
