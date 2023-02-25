@@ -9,6 +9,26 @@ M.general = {
   },
 }
 
+M.nvterm = {
+  t = {
+    ["<A-\\>"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "toggle floating term",
+    },
+  },
+
+  n = {
+    ["<A-\\>"] = {
+      function()
+        require("nvterm.terminal").toggle "float"
+      end,
+      "toggle floating term",
+    },
+  },
+}
+
 -- more keybinds!
 
 return M
