@@ -10,6 +10,10 @@ local plugins = {
     end,
   },
 
+  ["NvChad/ui"] = {
+    override_options = overrides.ui,
+  },
+
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = overrides.treesitter,
@@ -41,9 +45,9 @@ local plugins = {
 
   ["folke/which-key.nvim"] = {
     disable = false,
-    config = function ()
-      require("custom.plugins.whichkey")
-    end
+    config = function()
+      require "custom.plugins.whichkey"
+    end,
   },
 
   ["windwp/nvim-ts-autotag"] = {
@@ -59,13 +63,13 @@ local plugins = {
   },
 
   ["lewis6991/gitsigns.nvim"] = {
-    override_options = overrides.gitsigns;
+    override_options = overrides.gitsigns,
   },
 
   ["ethanholz/nvim-lastplace"] = {
     config = function()
-      require("nvim-lastplace")
-      require("custom.plugins.configs.last-place")
+      require "nvim-lastplace"
+      require "custom.plugins.configs.last-place"
     end,
   },
 }
