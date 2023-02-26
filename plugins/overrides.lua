@@ -58,4 +58,13 @@ M.gitsigns = {
   numhl = true,
 }
 
+M.ui = {
+  statusline = {
+    separator_style = {
+      right = "",
+      left = "",
+    },
+  },
+}
+
 return M
