@@ -44,12 +44,12 @@ M.nvimtree = {
       show = {
         git = true,
       },
-      glyphs = {
-        git = {
-          unstaged = "",
-          untracked = "",
-        },
-      },
+      -- glyphs = {
+      --   git = {
+      --     unstaged = "",
+      --     untracked = "",
+      --   },
+      -- },
     },
   },
 }
@@ -61,8 +61,8 @@ M.gitsigns = {
 M.ui = {
   statusline = {
     separator_style = {
-      right = "",
-      left = "",
+      right = "█ ",
+      left = " █",
     },
   },
 }
